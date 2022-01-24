@@ -1,3 +1,3 @@
-import { MyPluginSettings } from "./interfaces";
+import { UrlToPDFSettings } from "./interfaces";
 
-export const DEFAULT_SETTINGS: MyPluginSettings = {};
+export const DEFAULT_SETTINGS: UrlToPDFSettings = {};
