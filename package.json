@@ -1,0 +1,44 @@
+{
+	"name": "obsidian-sample-plugin",
+	"version": "0.0.1",
+	"description": "This is a sample plugin for Obsidian.",
+	"main": "main.js",
+	"scripts": {
+		"dev": "node esbuild.config.mjs",
+		"build": "node esbuild.config.mjs production",
+		"release": "standard-version",
+		"test": "jest --passWithNoTests"
+	},
+	"standard-version": {
+		"t": "",
+		"types": [
+			{
+				"type": "feat",
+				"section": "Features"
+			},
+			{
+				"type": "fix",
+				"section": "Fixes"
+			},
+			{
+				"type": "docs",
+				"section": "Documentation"
+			}
+		],
+		"header": "## Changelog"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/jest": "^27.4.0",
+		"@types/node": "^16.11.1",
+		"esbuild": "^0.13.12",
+		"jest": "^27.4.7",
+		"obsidian": "^0.12.17",
+		"standard-version": "^9.3.2",
+		"ts-jest": "^27.1.2",
+		"tslib": "2.3.1",
+		"typescript": "^4.4.4"
+	}
+}
